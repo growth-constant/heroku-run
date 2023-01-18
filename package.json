@@ -4,8 +4,8 @@
   "description": "A simple github action that promotes a given heroku up down the pipeline",
   "main": "index.js",
   "scripts": {
-    "test": "node test",
-    "start": "node index"
+    "lint": "eslint .",
+    "test": "jest ./index.test.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,9 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "jest": "^29.3.1"
   }
 }
