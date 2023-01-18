@@ -30,7 +30,8 @@ jobs:
 
       - name: Rebuild the dist/ directory
         uses: borales/actions-yarn@v4
-        run:  yarn run prepare
+        with:
+          cmd: run prepare
 
       - name: Compare the expected and actual dist/ directories
         run: |
